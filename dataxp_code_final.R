@@ -1,18 +1,12 @@
 install.packages("tidyverse")
-#install.packages("lubridate")
 install.packages("dplyr")
-#install.packages("data.table")
-#install.packages("curl")
 install.packages("sqldf")
-#install.packages("formatR")
+
 
 library(tidyverse) 
-#library(lubridate)
 library(dplyr)
-#library(data.table)
-#library(curl)
 library(sqldf)
-#library(formatR)
+
 
  vax <- read.csv("C:/Users/priyo/Downloads/dataxp/country_vaccinations_csv.csv")
 head(vax)
