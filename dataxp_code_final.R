@@ -43,15 +43,6 @@ sql_vax_clean_new <- read.csv("C:/Users/priyo/Downloads/dataxp/percentage_differ
 sql_vax_clean_new
 
 
-
-
-
-sql_vax_clean_new %>% 
-  ggplot(aes(perc_diff)) + 
-  geom_boxplot()
-summary(sql_vax_clean)
-
-
 vax_clean2 <- sqldf('select *
                     ,SUM(daily_vac) OVER (PARTITION BY country ORDER BY country,date) as cumulative_vac
                     FROM sql_vax')
